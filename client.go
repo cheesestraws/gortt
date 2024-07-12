@@ -12,8 +12,8 @@ import (
 	"time"
 )
 
-var ErrNoUsername = errors.New("no username supplied")
-var ErrNoPassword = errors.New("no password supplied")
+var ErrNoUsername = errors.New("no username supplied; did you mean to supply RTTAPIUSER?")
+var ErrNoPassword = errors.New("no password supplied; ; did you mean to supply RTTAPIPASS?")
 
 type Client struct {
 	HTTPClient *http.Client
